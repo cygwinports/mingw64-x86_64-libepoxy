@@ -2,7 +2,7 @@ CROSS_HOST="x86_64-w64-mingw32"
 inherit cross
 
 NAME="mingw64-x86_64-libepoxy"
-VERSION=1.3.1
+VERSION=1.4.3
 RELEASE=1
 CATEGORY="Devel"
 SUMMARY="OpenGL abstraction library for Win64 toolchain"
@@ -12,8 +12,7 @@ eglGetProcAddress(), etc. from the app developer, with very little knowledge
 needed on their part. They get to read GL specs and write code using undecorated
 function names like glCompileShader()."
 HOMEPAGE="https://github.com/anholt/libepoxy"
-SRC_URI="https://github.com/anholt/libepoxy/archive/v${VERSION}/libepoxy-v${VERSION}.tar.gz"
+SRC_URI="https://github.com/anholt/libepoxy/archive/${VERSION}/libepoxy-${VERSION}.tar.gz"
 SRC_DIR="libepoxy-${VERSION}"
-PATCH_URI="1.2-cygwin-check.patch"
 
 CYGCONF_ARGS="ac_cv_lib_dl_dlopen=no"
